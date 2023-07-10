@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     box-sizing: border-box;
     padding: 0;
@@ -5,19 +9,22 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-.container {
+header {
+    height: 100svh;
     background-image: url("./assets/img/Fondo-Pag1.jpg");
-    background-size: 100% 50%;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center top;
 }
 
-header {
-    height: 100svh;
+.img-logo {
+    width: 70%;
 }
 
-nav>div>img {
-    width: 70%;
+.navbar-fixed {
+    position: fixed;
+    padding: 20px;
+    width: 100%;
 }
 
 .navbar-container {
@@ -36,12 +43,13 @@ nav>div>img {
     list-style-type: none;
 }
 
-.container-ul>ul>li {
+.container-ul>ul>a {
     margin: 0px 20px;
-    color: white;
+    color: black;
     letter-spacing: 4px;
     font-size: 18px;
     font-weight: 400;
+    text-decoration: none;
 }
 
 .container-titulo {
@@ -56,8 +64,9 @@ nav>div>img {
 }
 
 .subContainer-titulo {
-    padding-bottom: 100px;
+    padding-top: 50px;
     text-align: center;
+    font-size: 50px
 }
 
 .subContainer-titulo>p {
@@ -73,28 +82,190 @@ nav>div>img {
     border: 3px solid white;
     font-family: 'Poppins', sans-serif;
     font-size: 15px;
-    color: white;
     transition: all 0.8s;
     font-weight: 400;
     letter-spacing: 2px;
 }
 
+.subContainer-titulo>button>a {
+    text-decoration: none;
+    color: white;
+    transition: all 1s;
+}
+
+.subContainer-titulo>button:hover a {
+    color: black;
+}
+
 .subContainer-titulo>button:hover {
     background-color: rgb(255, 255, 255);
     color: black;
+    box-shadow: 4px 2px 15px 1px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 4px 2px 15px 1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 4px 2px 15px 1px rgba(0, 0, 0, 0.75);
 }
+
 
 .subContainer-titulo>p>span {
     font-weight: normal;
 }
 
+.navbar-fixed.revert {
+    transition: all 0.5s;
+}
+
+.scrolled {
+    background-color: rgba(242, 232, 232, 0.337);
+    padding: 0px;
+    transition: all 0.5s;
+}
+
 section {
     height: 100svh;
-    background-color: green;
+    background-image: url(assets/img/Fondo-section.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
+
+#tours {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.barcelona {
+    background-image: url(assets/img/Barcelona.jpg);
+    background-size: cover;
+    background-position: center;
+    transition: all 2s;
+}
+
+.barcelona:hover {
+    background-position: 100%;
+}
+
+.los-andes {
+    background-image: url(assets/img/Los-Andes.jpg);
+    background-size: cover;
+    background-position: center;
+    transition: all 2s;
+}
+
+.los-andes:hover {
+    background-position: 100%;
+}
+
+.disney {
+    background-image: url(assets/img/Disney.jpg);
+    background-size: cover;
+    background-position: center;
+    transition: all 2s;
+}
+
+.disney:hover {
+    background-position: 100%
+}
+
+.madrid {
+    background-image: url(assets/img/Madrid.jpg);
+    background-size: cover;
+    background-position: center;
+    transition: all 2s;
+}
+
+.madrid:hover {
+    background-position: 100%;
+}
+
+.container-card {
+    width: 250px;
+    height: 320px;
+    border-radius: 10px;
+    background-color: white;
+    border: 3px solid white;
+}
+
+.img-card {
+    border-radius: 7px 7px 0px 0px;
+    width: 100%;
+    height: 70%;
+}
+
+
+.description-card {
+    width: 100%;
+    height: 30%;
+    text-align: center;
+}
+
+.description-card,
+h1,
+h2 {
+    margin: 0;
+    font-weight: 300;
+}
+
+h2 {
+    font-weight: 500;
+    padding-top: 10px;
+    font-size: 25px;
+}
+
+.flex-button {
+    display: flex;
+    align-items: center;
+    padding: 0px 10px 0px 30px;
+    justify-content: space-around;
+}
+
+.container-card button {
+    display: flex;
+    height: 30px;
+    width: 80px;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff4b;
+    color: black;
+    border-radius: 7px;
+    cursor: pointer;
+    background: #ffffff;
+    margin-right: 20px;
+    margin-top: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+div img {
+    width: 100%;
+    height: 100%;
+    border-radius: 6px 6px 0px 0px;
+}
+
 
 
 footer {
     height: 100svh;
-    background-color: yellow;
+    background-image: url(assets/img/Fondo-footer.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.container-footer {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-info {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), -2px -2px 4px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 40%;
+}
+
+.container-info h1 {
+    font-weight: 600;
+    line-height: 1;
 }

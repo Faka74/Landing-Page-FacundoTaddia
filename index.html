@@ -7,39 +7,98 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="./assets/img/Logo-mountain.png" type="image/x-icon">
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
 </head>
+
+<title>Landing page | Facundo Taddia</title>
 
 <body>
     <div class="container">
-        <header>
-            <nav class="navbar-container">
-                <div class="container-img">
-                    <img src="assets/img/Logo-mountain.png" alt="Logo-mountain">
-                </div>
-                <div class="container-ul">
-                    <ul>
-                        <li class="ul-item">Home</li>
-                        <li class="ul-item">About</li>
-                        <li class="ul-item">Contact</li>
-                        <li class="ul-item">Tours</li>
-                    </ul>
-                </div>
-            </nav>
+        <header id="home">
+            <div class="navbar-fixed">
+                <nav class="navbar-container">
+                    <div class="container-img">
+                        <a href="#home"><img class="img-logo" src="assets/img/Logo-mountain.png"
+                                alt="Logo-mountain"></a>
+
+                    </div>
+                    <div class="container-ul">
+                        <ul>
+                            <a href="#home">Home</a>
+                            <a href="#tours">Tours</a>
+                            <a href="#about">About</a>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
             <div class="container-titulo">
                 <div class="subContainer-titulo">
                     <p>Landing page by : <span>Facundo Taddia</span></p>
-                    <button>Explore tours</button>
+                    <button><a href="#tours">Explore tours</a></button>
                 </div>
             </div>
         </header>
-        <section>
+        <section id="tours">
+            <div class="container-card">
+                <div class="img-card barcelona">
+
+                </div>
+                <div class="description-card">
+                    <h1>Barcelona</h1>
+                    <div class="flex-button">
+                        <h2>$3.100</h2>
+                        <button>Buy</button>
+                    </div>
+                </div>
+            </div>
+            <div class="container-card">
+                <div class="img-card los-andes">
+
+                </div>
+                <div class="description-card">
+                    <h1>Los andes</h1>
+                    <div class="flex-button">
+                        <h2>$2.500</h2>
+                        <button>Buy</button>
+                    </div>
+                </div>
+            </div>
+            <div class="container-card">
+                <div class="img-card disney">
+                </div>
+                <div class="description-card">
+                    <h1>Disney</h1>
+                    <div class="flex-button">
+                        <h2>$5.000</h2>
+                        <button>Buy</button>
+                    </div>
+                </div>
+            </div>
+            <div class="container-card">
+                <div class="img-card madrid">
+                </div>
+                <div class="description-card">
+                    <h1>Madrid</h1>
+                    <div class="flex-button">
+                        <h2>$3.000</h2>
+                        <button>Buy</button>
+                    </div>
+                </div>
+            </div>
         </section>
-        <footer>
+        <footer id="about">
+            <div class="container-footer">
+                <div class="container-info">
+                    <h1>We are the number 1 tourism company in the United States</h1>
+                    <p>We were born in Washington on December 5, 1952, taking the first steps in aviation with our
+                        captain
+                        John White, expanding throughout the world offering our trips.</p>
+                </div>
+            </div>
         </footer>
     </div>
     <script src="app.js"></script>
