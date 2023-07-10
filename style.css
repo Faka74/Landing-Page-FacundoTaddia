@@ -262,10 +262,15 @@ footer {
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), -2px -2px 4px rgba(0, 0, 0, 0.5);
     text-align: center;
-    width: 40%;
+    width: 60%;
 }
 
 .container-info h1 {
     font-weight: 600;
     line-height: 1;
+    font-size: 60px;
+}
+
+.container-info p{
+    font-size: 20px;
 }
