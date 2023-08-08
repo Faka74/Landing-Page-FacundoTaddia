@@ -17,23 +17,30 @@
 <title>Landing page | Facundo Taddia</title>
 
 <body>
-    <div class="container">
         <header id="home">
             <div class="navbar-fixed">
                 <nav class="navbar-container">
                     <div class="container-img">
                         <a href="#home"><img class="img-logo" src="assets/img/Logo-mountain.png"
-                                alt="Logo-mountain"></a>
-
-                    </div>
-                    <div class="container-ul">
-                        <ul>
+                            alt="Logo-mountain"></a>
+                        </div>
+                        <div class="container-ul" id="ulDesplegable">
+                            <ul class="ulDesplegable">
                             <a href="#home">Home</a>
                             <a href="#tours">Tours</a>
                             <a href="#about">About</a>
                         </ul>
                     </div>
+                    <i id="barra" class="fa fa-bars fa-lg barra"></i>
                 </nav>
+            </div>
+            <div class="container-ulquerie" id="uldesplegablequerie">
+                <i id="barracierre" class="fa fa-times fa-lg barracierre"></i>
+                <ul class="uldesplegablequerie">
+                    <a href="#home">Home</a>
+                    <a href="#tours">Tours</a>
+                    <a href="#about">About</a>
+                </ul>
             </div>
             <div class="container-titulo">
                 <div class="subContainer-titulo">
@@ -45,7 +52,6 @@
         <section id="tours">
             <div class="container-card">
                 <div class="img-card barcelona">
-
                 </div>
                 <div class="description-card">
                     <h1>Barcelona</h1>
@@ -57,7 +63,6 @@
             </div>
             <div class="container-card">
                 <div class="img-card los-andes">
-
                 </div>
                 <div class="description-card">
                     <h1>Los andes</h1>
@@ -100,7 +105,6 @@
                 </div>
             </div>
         </footer>
-    </div>
     <script src="app.js"></script>
 </body>
 

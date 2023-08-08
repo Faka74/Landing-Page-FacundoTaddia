@@ -38,7 +38,7 @@ header {
     padding: 0px 20px 0px 0px;
 }
 
-.container-ul>ul {
+.container-ul {
     display: flex;
     list-style-type: none;
 }
@@ -180,8 +180,8 @@ section {
 }
 
 .container-card {
-    width: 250px;
-    height: 320px;
+    width: 20%;
+    height: 300px;
     border-radius: 10px;
     background-color: white;
     border: 3px solid white;
@@ -231,8 +231,8 @@ h2 {
     border-radius: 7px;
     cursor: pointer;
     background: #ffffff;
-    margin-right: 20px;
-    margin-top: 10px;
+    margin-right: 18px;
+    margin-top: 8px;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -271,6 +271,103 @@ footer {
     font-size: 60px;
 }
 
-.container-info p{
+.container-info p {
     font-size: 20px;
+}
+
+.barra {
+    display: none;
+    cursor: pointer;
+}
+
+.container-ulquerie {
+    display: none;
+    transition: all 1s;
+}
+
+@media only screen and (max-width: 1050px) {
+    .barra {
+        display: block;
+    }
+
+    .container-ul {
+        display: none;
+    }
+
+    .container-card {
+        width: 200px;
+        height: 270px;
+    }
+
+    .container-card button {
+        height: 20px;
+        width: 70px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .container-ulquerie {
+        display: block;
+        transition: all 0.5s;
+        position: fixed;
+        right: 0;
+        background-color: #7fd8c3;
+        height: 100svh;
+        transform: translate(160px);
+        text-align: center;
+        line-height: 4;
+    }
+
+    .desplegado {
+        transform: translate(0px);
+        width: 100%;
+    }
+
+    .uldesplegablequerie {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .uldesplegablequerie a {
+        font-size: 40px;
+        font-weight: lighter;
+        text-decoration: none;
+        margin-top: 30px;
+        color: white;
+    }
+
+    .subContainer-titulo {
+        font-size: 40px;
+    }
+
+    .barracierre {
+        position: absolute;
+        right: 100px;
+        top: 60px;
+        cursor: pointer;
+        transition: all 2s;
+    }
+
+    .container-info h1 {
+        font-size: 40px;
+    }
+
+    .container-info p {
+        font-size: 15px;
+    }
+
+.container-card{
+    width: 250px;
+    height: 250px;
+}
+
+}
+@media only screen and (max-width: 550px){
+.container-card{
+    width: 200px;
+    height: 250px;
+
+}
 }
